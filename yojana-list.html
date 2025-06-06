@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>योजना सूची - झारखंड सरकारी योजना</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav {
+      background-color: #228B22;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  background-color: #2e8b57;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header {
+  background-color: #006400;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 1rem; /* Space between logo and title */
+  flex-wrap: wrap; /* So mobile me neeche aa jaye agar jagah kam ho */
+  text-align: center;
+}
+nav li a:hover {
+  background-color: #1e7e34;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+    .section-title {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      color: #004d00;
+      font-size: 1.8rem;
+    }
+    .container {
+      padding: 1rem 2rem 2rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #f0f0f0;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #006400;
+      font-size: 1.2rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    footer {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+<script src="translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link rel="stylesheet" href="translate.css">
+  <header>
+    <img src="jharkhand.png" alt="Jharkhand Logo">
+    <h1>झारखंड सरकारी योजना</h1>
+  </header>
+
+  <nav>
+  <ul>
+    <li><a href="index.html">होम</a></li>
+      <li><a href="yojana-list.html">योजना सूची</a></li>
+      <li><a href="news-updates.html">समाचार</a></li>
+      <li><a href="contact-help.html">संपर्क करें</a></li>
+      <li><a href="yojana-detail.html">अस्वीकरण</a></li>
+  </ul>
+</nav>
+
+  <div class="section-title">योजनाओं की श्रेणियाँ</div>
+
+  <div class="container">
+    <a href="pension.list.html" class="card">
+      <h3>👵 पेंशन योजनाएं</h3>
+      <p>वृद्धा, विधवा, विकलांग पेंशन जैसी योजनाओं की सूची।</p>
+    </a>
+
+    <a href="ration.list.html" class="card">
+      <h3>🍚 राशन / खाद्य सुरक्षा</h3>
+      <p>राशन कार्ड, अंत्योदय योजना, राष्ट्रीय खाद्य सुरक्षा योजना।</p>
+    </a>
+
+    <a href="students.bonafide.html" class="card">
+      <h3>🎓 छात्रवृत्ति / शिक्षा</h3>
+      <p>प्री-मैट्रिक, पोस्ट-मैट्रिक स्कॉलरशिप, सुकन्या योजना।</p>
+    </a>
+
+    <a href="aavas.list.html" class="card">
+      <h3>🏠 आवास योजनाएं</h3>
+      <p>प्रधानमंत्री आवास योजना, बीपीएल आवास योजना।</p>
+    </a>
+
+    <a href="mahila.saktikaran.html" class="card">
+      <h3>👩 महिला सशक्तिकरण</h3>
+      <p>मुख्यमंत्री लाडली योजना, उज्ज्वला योजना आदि।</p>
+    </a>
+
+    <a href="swarojgar.html" class="card">
+      <h3>💼 स्वरोजगार / बेरोजगारी</h3>
+      <p>स्टार्टअप, स्वरोजगार, स्वरोजगार भत्ता जैसी योजनाएं।</p>
+    </a>
+  </div>
+
+  <footer>
+    योजना की श्रेणियाँ जानने के बाद, किसी पर क्लिक कर पूरी जानकारी पाएं।
+  </footer>
+</body>
+</html>
