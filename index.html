@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>झारखंड सरकारी योजना - होम</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f2f2f2;
+      line-height: 1.6;
     }
 
     header {
       background-color: #006400;
       color: white;
-      padding: 1rem 1.5rem;
+      padding: 0.5rem 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -24,13 +30,13 @@
     }
 
     header img {
-      height: 50px;
+      height: 40px;
       width: auto;
     }
 
     header h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: center;
     }
 
@@ -42,55 +48,57 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      margin: 0;
-      padding: 0;
       flex-wrap: wrap;
+      margin: 0;
+      padding: 0.5rem;
+    }
+
+    nav li {
+      margin: 0.3rem;
     }
 
     nav li a {
       color: white;
       text-decoration: none;
+      font-size: 0.9rem;
       font-weight: bold;
-      display: block;
-      padding: 0.7rem 1.2rem;
-      margin: 0.5rem;
-      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
       background-color: #2e8b57;
-      transition: background-color 0.3s, transform 0.2s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
     }
 
     nav li a:hover {
       background-color: #1e7e34;
-      color: #fff;
       transform: scale(1.05);
     }
 
     .hero {
       background: linear-gradient(to right, #b9fbc0, #d0f4de);
-      padding: 2rem;
+      padding: 1.5rem 1rem;
       text-align: center;
     }
 
     .hero h2 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #004d00;
     }
 
     .container {
-      padding: 2rem;
+      padding: 1.5rem 1rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
     .card {
       background-color: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: background-color 0.3s;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
       text-decoration: none;
       color: inherit;
     }
@@ -101,10 +109,12 @@
 
     .card h3 {
       margin-top: 0;
+      font-size: 1.1rem;
       color: #006400;
     }
 
     .card p {
+      font-size: 0.95rem;
       color: #333;
     }
 
@@ -113,12 +123,44 @@
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      font-size: 0.9rem;
     }
 
+    /* ✅ Responsive Design */
     @media (max-width: 768px) {
-      .container {
-        padding: 1rem;
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+      }
+
+      header img {
+        height: 35px;
+      }
+
+      header h1 {
+        font-size: 1rem;
+      }
+
+      nav li a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+      }
+
+      .hero h2 {
+        font-size: 1.3rem;
+      }
+
+      .card h3 {
+        font-size: 1rem;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -148,37 +190,43 @@
     </ul>
   </nav>
 
-  <!-- Hero Banner -->
+  <!-- Hero Section -->
   <div class="hero">
     <h2>सरकारी योजनाएं, अब आसान भाषा में!</h2>
   </div>
 
-  <!-- Cards Section -->
+  <!-- Main Content Cards -->
   <div class="container">
     <a class="card" href="vridha-pension.html">
       <h3>🔶 वृद्धा पेंशन योजना</h3>
       <p>झारखंड में वृद्ध नागरिकों को दी जाने वाली मासिक पेंशन योजना। आवेदन प्रक्रिया और पात्रता जानें।</p>
     </a>
+
     <a class="card" href="abua.avas.html">
       <h3>🔶 अबुआ आवास योजना</h3>
       <p>बेघर और गरीब परिवारों को पक्का घर देने के लिए झारखंड सरकार की महत्वाकांक्षी योजना।</p>
     </a>
+
     <a class="card" href="sukanya-yojana.html">
       <h3>🔶 मुख्यमंत्री सुकन्या योजना</h3>
       <p>बालिकाओं के लिए बचत और शिक्षा प्रोत्साहन योजना की जानकारी और लाभ।</p>
     </a>
+
     <a class="card" href="maiya.samman.html">
       <h3>🔶 मइया सम्मान योजना</h3>
       <p>झारखंड की बुजुर्ग महिलाओं को आर्थिक सहयोग देने वाली सम्मानजनक योजना।</p>
     </a>
+
     <a class="card" href="ration-card.html">
       <h3>🔶 राशन कार्ड आवेदन</h3>
       <p>ऑनलाइन राशन कार्ड पंजीकरण और दस्तावेज़ों की सूची। आवेदन का स्टेटस भी जानें।</p>
     </a>
+
     <a class="card" href="vidhava.pention.html">
       <h3>🔶 विधवा पेंशन योजना</h3>
       <p>पति की मृत्यु के बाद महिलाओं को आर्थिक सहायता देने वाली सरकारी योजना।</p>
     </a>
+
     <a class="card" href="viklang.pension.html">
       <h3>🔶 विकलांग पेंशन योजना</h3>
       <p>शारीरिक/मानसिक रूप से अक्षम नागरिकों के लिए मासिक सहायता योजना।</p>
